@@ -33,7 +33,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static('uploads'));
 
 // Database connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://shubh7silyan:yDzD0Etus7x3tzLt@shaggsstore.mfpkmux.mongodb.net/?retryWrites=true&w=majority&appName=ShaggsStore', {
+mongoose.connect(process.env.MONGODB_URI || '', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
